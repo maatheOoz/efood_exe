@@ -68,7 +68,7 @@ const Product: React.FC<ProductProps> = ({
     <div className="container">
       <S.CardConteiner>
         <S.CardRestaurant
-          title={`Clicque aqui para ver mais detalhes do cardapio : ${title}`}
+          title={`Clique aqui para ver mais detalhes do cardapio : ${title}`}
         >
           <S.Imagem style={{ backgroundImage: `url(${image})` }} />
           <S.Infos>

@@ -48,7 +48,7 @@ export const Titulo = styled.h2`
   font-weight: 900;
   line-height: 42.19px;
   text-align: center;
-  margin-top: 138.5px;
+  margin-top: 138px;
 
   @media (max-width: ${breakpoints.tablet}) {
     width: 100%;
@@ -76,6 +76,8 @@ export const ContainerHeader = styled.div`
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  padding-left: 8px;
+  padding-right: 8px;
 
   @media (max-width: ${breakpoints.mobile}) {
     align-items: center;
