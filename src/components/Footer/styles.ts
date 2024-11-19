@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { colors } from '../../styles'
 
 export const Footers = styled.footer`
+  max-width: 100%;
   height: 298px;
   background-color: ${colors.BlanchedAlmond};
 `

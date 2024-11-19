@@ -3,12 +3,10 @@ import { Props } from '.'
 import { breakpoints, colors } from '../../styles'
 
 export const HeaderPage = styled.div`
-  width: 100%;
-  margin-right: 250px;
+  max-width: 100%;
 `
 
 export const Imagem = styled.div<Props>`
-  max-width: 2031.81px;
   width: 100%;
   max-height: ${(props) => (props.background === 'dark' ? '186px' : '360px')};
   height: 100%;
@@ -21,7 +19,7 @@ export const Imagem = styled.div<Props>`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px 171px;
+    padding: 16px 0;
   }
 
   .imagemLogoLnk {
@@ -30,7 +28,6 @@ export const Imagem = styled.div<Props>`
     justify-content: center;
     width: 125px;
     height: 57.5px;
-    margin-right: 250px;
 
     @media (max-width: ${breakpoints.tablet}) {
       margin-top: 40px;
@@ -52,7 +49,6 @@ export const Titulo = styled.h2`
   line-height: 42.19px;
   text-align: center;
   margin-top: 138.5px;
-  margin-right: 250px;
 
   @media (max-width: ${breakpoints.tablet}) {
     width: 100%;
@@ -65,6 +61,7 @@ export const Titulo = styled.h2`
   }
 
   @media (max-width: ${breakpoints.mobile}) {
+    max-width: 100%;
     width: 100%;
     height: 100%;
     font-size: 36px;
@@ -93,6 +90,7 @@ export const RestaurantName = styled(ContainerHeader)`
   @media (max-width: ${breakpoints.tablet}) {
     margin-top: 40px;
   }
+
   @media (max-width: ${breakpoints.mobile}) {
     margin-top: 40px;
   }
@@ -107,6 +105,7 @@ export const CarrinhoDeProdutos = styled(ContainerHeader)`
     margin-top: 40px;
     text-align: center;
   }
+
   @media (max-width: ${breakpoints.mobile}) {
     margin-top: 40px;
     padding-left: 5%;

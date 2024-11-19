@@ -12,7 +12,7 @@ export const Overlay = styled.div`
 `
 
 export const Container = styled.div<{ isOverlay: boolean }>`
-  position: fixed;
+  position: fixed; /*  ${({ isOverlay }) => (isOverlay ? 'fixed' : 'fixed')} */
   top: 0;
   left: 0;
   width: 100%;

@@ -9,9 +9,10 @@ export const parseToBrl = (amount = 0) => {
 
 export const getTotalPrice = (items: CartItem[]): number => {
   return items.reduce((accumulator, currentItem) => {
+    // Verifica se 'preco' existe e é um número
     if (currentItem.preco) {
       return accumulator + currentItem.preco
     }
-    return accumulator
+    return accumulator // Garante que o acumulador não é alterado se 'preco' não existir
   }, 0)
 }

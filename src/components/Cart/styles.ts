@@ -35,6 +35,7 @@ export const Sidebar = styled.aside`
   max-height: 1624px;
   height: 100%;
   position: relative;
+  gap: 0px;
   opacity: 1;
   z-index: 1;
   padding: 16px 8px;
